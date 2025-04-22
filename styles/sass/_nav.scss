@@ -1,0 +1,40 @@
+
+.navbar{
+    @include flex-between;
+    padding: 20px;
+    img {
+        width: 120px;
+    }
+    .links{
+        @include breakpoints(mobile){
+            display: none;
+        }
+       display: flex;
+       gap: 16px;
+       a{
+        font-size:$pragraph-size;
+        text-decoration: none;
+        color: $primary-color;
+        &:hover{
+            color: darken($primary-color, 10%);
+        }
+       }
+
+        
+      
+
+
+
+    }
+    .buttons{
+        display: flex;
+        gap: 16px;
+
+.button{
+    @include button-style;
+  
+}
+    }
+
+
+}

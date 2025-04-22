@@ -1,0 +1,38 @@
+.photo-text{
+    @include flex-between;
+    @include breakpoints(mobile){
+        display: flex;
+        flex-direction: column;
+      }
+      padding:0 100px;
+    gap: 20px;
+    img{
+        width: 250px;
+    }
+    .disc{
+        @include flex-column;
+        align-items: start;
+        gap: 20px;
+        h1{
+            font-size: $secondary-size;
+            color: $secondary-color;
+        
+        @include breakpoints(mobile){
+            font-size: 24px;
+          }
+          @include breakpoints(large){
+            font-size: 40px;
+          }
+          
+          
+        }
+        p{
+            color: $text-color;
+            font-size: $pragraph-size;
+            
+        }
+        .button{
+            @include button-style;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.second{
+ @include flex-column;
+ margin: 100px 0;
+ text-align: center;
+ h2{
+    color: $secondary-color;
+    font-size: $title-size;
+    margin:20px 0;
+ }
+
+ p{
+    color: $text-color;
+    font-size: $pragraph-size;
+    margin: 10px 0;
+ }
+ .icons{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap: 20px;
+   margin-bottom: 40px;
+   
+  
+ }
+ .cards{
+    @include flex-between;
+    .card{
+        @include flex-column;
+        padding: 20px;
+        img{
+            width: 50px;
+           }
+           h3{
+        color: $secondary-color;
+        font-size: $secondary-size;
+           }
+    }
+ }
+}

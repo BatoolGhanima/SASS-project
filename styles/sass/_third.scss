@@ -1,0 +1,58 @@
+.third{
+    background-color: $bg-transparent;
+    padding: 100px 100px;
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include breakpoints(mobile){
+        flex-direction: column;
+    }
+    p{
+        color: $text-color;
+        font-size: $pragraph-size;  
+    }
+    .third-right{
+        margin: 20px;
+        @include flex-column;
+        
+        h1{
+            font-size: $secondary-size;
+            color: $secondary-color;
+            @include breakpoints(mobile){
+                font-size: 24px;
+              }
+              @include breakpoints(large){
+                font-size: 40px;
+              }
+              
+            span{
+color: $primary-color;
+            }
+        }
+       
+    }
+    .third-left{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @include breakpoints(mobile){
+            grid-template-columns: repeat(1,1fr);
+        }
+gap: 20px;
+        .details{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            img{
+                width: 40px;
+            }
+h2{
+            color: $secondary-color;
+            font-size: $secondary-size;
+            margin:10px 0;
+        }
+    }
+        }
+        
+}

@@ -1,0 +1,41 @@
+.firstSection{
+   @include flex-between; 
+   @include breakpoints(mobile){
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   padding: 20px;
+
+   h1{
+    color: $secondary-color;
+    font-size: 64px;
+    span{
+        color: $primary-color;
+    }
+    @include breakpoints(mobile){
+        font-size: 24px;
+      }
+      @include breakpoints(small){
+        font-size: 30px;
+      }
+      @include breakpoints(medium){
+        font-size: 40px;
+      }
+      @include breakpoints(large){
+        font-size: 64px;
+      }
+
+   }
+   p{
+    margin-top: 20px;
+    color: $text-color;
+   }
+   .button{
+    margin-top: 20px;
+    @include button-style;
+   }
+
+   img{
+    width: 450px;
+   }
+}

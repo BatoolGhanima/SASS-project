@@ -1,0 +1,40 @@
+.forth{
+    background-color: $bg-transparent;
+    margin:  100px 0;
+    padding: 100px;
+    @include flex-between;
+    @include breakpoints(mobile){
+        display: flex;
+        flex-direction: column;
+      }
+    
+    gap: 20px;
+    img{
+        width: 250px;
+    }
+    .disc{
+        @include flex-column;
+        align-items: start;
+        gap: 20px;
+     
+        p{
+            color: $text-color;
+            font-size: $pragraph-size;
+            
+        }
+        span{
+            color: $primary-color;
+        }
+        .icons{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            
+           img{
+            width: 40px;
+           }
+          }
+    }
+}

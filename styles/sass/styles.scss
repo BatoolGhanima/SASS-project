@@ -1,0 +1,21 @@
+@import './variables';
+@import './mixins';
+@import './nav';
+@import './firstSection';
+@import './second';
+@import './photo-text';
+@import './third';
+@import './forth';
+@import './fifth';
+@import './footer';
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+
+.container{
+    padding:  0 100px;
+    background-color: $bg-transparent;
+
+}

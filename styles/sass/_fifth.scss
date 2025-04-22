@@ -1,0 +1,86 @@
+.fifth{
+    @include flex-column;
+  
+    text-align: center;
+    h1{
+        font-size: $secondary-size;
+        color: $secondary-color;
+    
+    @include breakpoints(mobile){
+        font-size: 24px;
+      }
+      @include breakpoints(large){
+        font-size: 40px;
+      } 
+     
+    }
+    .last{
+        width: 100%;
+        padding: 20px;
+        background-color: $bg-transparent;
+        h1{
+            font-size: $title-size;
+            color: $secondary-color;
+            margin: 20px
+        }
+        .button{
+            @include button-style;
+        }
+    }
+}
+p{
+    color: $text-color;
+    font-size: $pragraph-size; 
+}
+.container-images{
+@include flex-between;
+gap: 20px;
+@include breakpoints(mobile){
+   flex-direction: column;
+}
+margin: 100px 0;
+.image-disc{
+position: relative;
+width:300px;
+@include breakpoints(mobile){
+    width: 450px;
+   margin: 20px;
+}
+@include breakpoints(medium){
+    width: 300px;
+ }
+border-radius: 10px;
+
+  img{
+    width:100%;
+    border-radius: 10px;
+}  
+.text{
+    background-color: $bg-transparent;
+    position: absolute;
+    padding: 10px;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    border-radius: 10px;
+   
+
+    h2{
+        color: $secondary-color;
+        font-size: $pragraph-size;
+        margin:10px 0; 
+
+      
+   
+}
+    a{
+        color: $primary-color;
+    }
+
+}
+}
+
+
+
+}
